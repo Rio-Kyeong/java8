@@ -1,8 +1,6 @@
 package me.leo.java8;
 
-import java.util.function.Function;
-import java.util.function.Predicate;
-import java.util.function.UnaryOperator;
+import java.util.function.*;
 
 public class FunctionUse {
     public static void main(String[] args) {
@@ -26,6 +24,15 @@ public class FunctionUse {
         // 입출력 값이 같을 경우 Function 함수 대신 사용할 수 있다.
         UnaryOperator<Integer> plus20 = (integer -> integer + 20);
 
+        BiConsumer<Integer, Integer> biConsumer = (num1, num2) -> System.out.println(num1 + num2);
+        biConsumer.accept(1, 2);
 
+        BiFunction<Integer, Integer, Integer> biFunction = (num1, num2) -> num1 * num2;
+        Integer result = biFunction.apply(1, 2);
+        System.out.println(result); // 2
+
+        BiPredicate<Integer, Integer> biPredicate = (num1, num2) -> num1 > num2;
+        boolean flag = biPredicate.test(1, 2);
+        System.out.println(flag); // false
     }
 }
