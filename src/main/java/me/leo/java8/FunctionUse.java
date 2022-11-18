@@ -18,7 +18,7 @@ public class FunctionUse {
 
         // 인자 값을 받아서 boolean 값을 리턴해준다.
         Predicate<String> startsWith = (s) -> s.startsWith("Leo");
-        Predicate<Integer> isEven = (i) -> i%2 == 0;
+        Predicate<Integer> isEven = (i) -> i % 2 == 0;
 
         // 입력 값 하나를 받아서 동일한 타입을 리턴
         // 입출력 값이 같을 경우 Function 함수 대신 사용할 수 있다.
