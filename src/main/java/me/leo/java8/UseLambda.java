@@ -3,10 +3,10 @@ package me.leo.java8;
 import java.util.function.Consumer;
 import java.util.function.IntConsumer;
 
-public class LambdaUse {
+public class UseLambda {
     public static void main(String[] args) {
-        LambdaUse lambdaUse = new LambdaUse();
-        lambdaUse.run();
+        UseLambda useLambda = new UseLambda();
+        useLambda.run();
     }
 
     // 변수 캡처

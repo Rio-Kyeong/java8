@@ -2,7 +2,7 @@ package me.leo.java8;
 
 import java.util.function.*;
 
-public class FunctionUse {
+public class UseFunction {
     public static void main(String[] args) {
         Function<Integer, Integer> plus10 = (integer) -> integer + 10;
 
